@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <title>Pénzügyeim</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Egyenleg: <span id="balance">0</span> Ft</h1>
+    <h2>Megtakarítás: <span id="savings">0</span> Ft</h2>
+    <input id="title" placeholder="Megnevezés">
+    <input id="amount" type="number" placeholder="Összeg">
+    <input id="date" type="date">
+    <select id="category">
+      <option value="Étel">🍽️ Étel</option>
+      <option value="Szórakozás">🎮 Szórakozás</option>
+      <option value="Közlekedés">✈️ Közlekedés</option>
+      <option value="Ruházat">👕 Ruházat</option>
+      <option value="Egészség">⚕️ Egészség</option>
+      <option value="Számla">🧾 Számla</option>
+      <option value="Gift">🎁 Gift</option>
+      <option value="Fizetés">💸 Fizetés</option>
+      <option value="Berakás">➕💰 Berakás</option>
+      <option value="Kivétel">💵➖ Kivétel</option>
+      <option value="Kp be">💵📥 Kp be</option>
+      <option value="Kp ki">💵📤 Kp ki</option>
+    </select>
+    <button onclick="add()">Hozzáadás</button>
+    <ul id="list"></ul>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
